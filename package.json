@@ -1,8 +1,8 @@
 {
     "name": "corvisa",
     "description": "Client for the Corvisa REST API",
-    "version": "0.0.0",
-    "author": "Corvisa",
+    "version": "0.0.1",
+    "author": "Samy Pessé <samypesse@gmail.com>",
     "license": "Apache 2",
     "main": "lib/index.js",
     "repository": {
