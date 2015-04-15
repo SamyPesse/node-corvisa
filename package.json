@@ -1,0 +1,33 @@
+{
+    "name": "corvisa",
+    "description": "Client for the Corvisa REST API",
+    "version": "0.0.0",
+    "author": "Corvisa",
+    "license": "Apache 2",
+    "main": "lib/index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/SamyPesse/node-corvisa.git"
+    },
+    "keywords": [
+        "corvisa", "rest", "api"
+    ],
+    "contributors": [
+        {
+            "name": "Samy Pesse",
+            "email": "samypesse@gmail.com"
+        }
+    ],
+    "dependencies": {
+        "q": "^1.2.0",
+        "lodash": "^3.2.1",
+        "request": "~2.37.0"
+    },
+    "devDependencies": {
+        "mocha": "2.2.4",
+        "chai": "2.2.0"
+    },
+    "scripts": {
+        "test": "export TESTING=true; mocha --reporter list"
+    }
+}
