@@ -71,3 +71,30 @@ Create a client for an application using `client.application`:
 ```js
 var app = client.application("your-app-id");
 ```
+
+Schedule a call:
+
+```js
+app.schedule({
+
+})
+.then(function() {
+    // Corvisa is calling me!
+});
+```
+
+##### Direct REST call
+
+```js
+// POST request to https://api.us1.corvisa.io/method_name
+corvisa.post("method_name", { ... })
+.then(function() {
+    ...
+});
+
+// GET request to https://api.us1.corvisa.io/method_name
+corvisa.get("method_name")
+.then(function() {
+    ...
+});
+```
