@@ -25,7 +25,7 @@ Options can be passed as a second argument to the constructor:
 ```js
 var corvisa = new Corvisa("YOUR_API_KEY", {
     // Default phone number for sending sms
-    phone: "+15554447001",
+    from: "+15554447001",
 
     // Endpoint for the Rest API
     endpoint: "https://api.us1.corvisa.io"
@@ -37,10 +37,9 @@ var corvisa = new Corvisa("YOUR_API_KEY", {
 Send a single sms using:
 
 ```js
-corvisa.sendSMS({
+corvisa.sendSMS("+15554447001", {
     to: "+14145554444",
-    from: "+15554447001",
-    message: "Hello World"
+    text: "Hello World"
 })
 .then(function() {
     // SMS sent!
@@ -50,30 +49,19 @@ corvisa.sendSMS({
 Or a batch of SMS using:
 
 ```js
-corvisa.sendSMS([
+corvisa.sendSMS("+15554447001", [
     {
         to: "+14145554444",
-        from: "+15554447001",
-        message: "Hello John Doe!"
+        text: "Hello John Doe!"
     },
     {
         to: "+14145554447",
-        from: "+15554447001",
-        message: "Hello!"
+        text: "Hello!"
     }
 ])
 .then(function() {
     // SMS sent!
 })
-```
-
-If a phone number is specified in the client configuration, you can directly use:
-
-```js
-corvisa.sendSMS("+14145554444", "Hello You ;)")
-.then(function() {
-    ...
-});
 ```
 
 ##### Voice Applications
