@@ -5,7 +5,7 @@ var Corvisa = require("../");
 describe('Client', function() {
 
     it('should return a 4xx code', function() {
-        var corvisa = new Corvisa("test");
+        var corvisa = new Corvisa("key", "secret");
 
         return corvisa.sendSMS("+15554447001", {
             to: "+14145554444",

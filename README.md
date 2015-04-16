@@ -17,7 +17,7 @@ Create a client using your API key:
 ```js
 var Corvisa = require("corvisa");
 
-var corvisa = new Corvisa("YOUR_API_KEY")
+var corvisa = new Corvisa("YOUR_API_KEY", "YOUR_API_SECRET")
 ```
 
 Options can be passed as a second argument to the constructor:
